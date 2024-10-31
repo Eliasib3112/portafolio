@@ -1,0 +1,172 @@
+/* Reset y Fuente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: #66cdaa; /* Verde pastel */
+    font-weight: bold;
+}
+
+header .logo img {
+    width: 40px;
+    margin-right: 0.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66cdaa; /* Verde pastel */
+}
+
+nav ul li .cta {
+    background-color: #66cdaa; /* Verde pastel */
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav ul li .cta:hover {
+    background-color: #5ab294;
+}
+
+/* Banner Principal */
+.hero {
+    background: url('banner.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4em 2em;
+    position: relative;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 0.5em 1em;
+    background-color: #66cdaa; /* Verde pastel */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #5ab294;
+}
+
+/* Alquileres Destacados */
+#destacados {
+    padding: 2em;
+    text-align: center;
+}
+
+#destacados h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #66cdaa; /* Verde pastel */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 1em;
+}
+
+.card-info h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card-info p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+}
